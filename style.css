@@ -1,0 +1,70 @@
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+}
+
+.ad {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: #ffcc00;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: white;
+}
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
