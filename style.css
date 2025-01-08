@@ -1,17 +1,17 @@
 /* -------------------------STANDARD MOBIL VERSION----------------------- */
 
-/* HEADER FOR MOBIL */
-
 body {
   font-family: "Montserrat", serif;
   --color1: #4a3b29;
   margin: 0;
   padding: 0;
 }
+
 main {
   margin-top: 30px;
 }
 
+/* HEADER - (mobil) */
 .logo_container {
   display: flex;
   justify-content: right;
@@ -25,13 +25,12 @@ main {
   margin-top: 3px;
 }
 
-/* BURGERMENU */
+/* BURGERMENU - (mobil) */
 .burger-menu {
   max-width: 100%;
   font-size: 3.5rem;
   cursor: pointer;
   display: none;
-  color: var(--color2);
 }
 #burger-toggle {
   display: none;
@@ -50,7 +49,7 @@ nav a {
 }
 
 @media (max-width: 890px) {
-  /* BURGERMENU */
+  /* BURGERMENU - (desktop)*/
   header {
     /* position: fixed; */
     width: 100%;
@@ -92,33 +91,6 @@ nav a {
     margin-left: -1.5em;
   }
 }
-/* SLUT PÅ HEADER */
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* HERO sektion - (mobil) */
-
-.hero-section {
-  position: relative;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.hero-text img {
-  position: absolute;
-  top: 37%;
-  left: 38%;
-  transform: translateX(-75%) rotate(22deg);
-  width: 50%;
-}
 
 /* FOOTER - (mobil) */
 footer {
@@ -150,6 +122,62 @@ footer .tooltip {
   display: none;
 }
 
+/* FORSIDEN - Main sektion - (mobil) */
+
+.hero-section {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-text img {
+  position: absolute;
+  top: 37%;
+  left: 38%;
+  transform: translateX(-75%) rotate(22deg);
+  width: 50%;
+}
+
+/* PORTFOLIO - Main sektion - (mobil) */
+.tema {
+  margin-bottom: 40px;
+}
+
+.tema h2 {
+  background-color: #f6d1a1;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.billede {
+  background-color: #ececec;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tekst {
+  background-color: #f9f9f9;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ------------------------------ DESKTOP VERSION----------------------- */
 
 @media (min-width: 816px) {
@@ -157,7 +185,7 @@ footer .tooltip {
     margin-top: 105px;
   }
 
-  /* DESKTOP HEADER */
+  /* HEADER - (desktop) */
 
   body {
     margin: 0;
@@ -184,21 +212,6 @@ footer .tooltip {
     margin: auto;
     margin-left: 900px;
     padding-top: 30px;
-  }
-
-  /* SLUT PÅ DESKTOP HEADER  */
-
-  /* HERO */
-  .hero-section {
-    position: relative;
-  }
-
-  .hero-text img {
-    position: absolute;
-    top: 31%;
-    left: 42%;
-    transform: translateX(-75%) rotate(22deg);
-    width: 20%;
   }
 
   /* FOOTER sektion - (desktop) */
@@ -235,5 +248,34 @@ footer .tooltip {
   footer .contact:hover .tooltip {
     visibility: visible;
     opacity: 1; /* Vist på hover */
+  }
+
+  /* FORSIDEN - Main sektion - (desktop)*/
+  .hero-section {
+    position: relative;
+  }
+
+  .hero-text img {
+    position: absolute;
+    top: 31%;
+    left: 42%;
+    transform: translateX(-75%) rotate(22deg);
+    width: 20%;
+  }
+}
+
+/* PORTFOLIO - Main sektion - (desktop) */
+@media (min-width: 890px) {
+  .content-grid {
+    flex-direction: row;
+  }
+
+  .billede,
+  .tekst {
+    flex: 1;
+  }
+
+  .tema h2 {
+    font-size: 28px;
   }
 }
