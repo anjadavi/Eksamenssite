@@ -3,44 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Mig</title>
+    <title>Forside</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scripts.js">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <span class="ad">AD</span>
+        <header>
+            <div>
+              <div class="mobil_header">
+                <input type="checkbox" id="burger-toggle" />
+                <label for="burger-toggle" class="burger-menu">&#9776;</label>
+              </div>
+    
+              <nav>
+                <ul class="nav_bar">
+                  <li><a href="index.html">FORSIDEN</a></li>
+                  <li><a href="potfolio.html">PORTFOLIO</a></li>
+                  <li><a href="ommig.html">OM MIG</a></li>
+                </ul>
+              </nav>
+              <div class="logo_container">
+                <a href="index.html"><img class="header_logo" src="/AD-logo.png" /></a>
+              </div>
+              
+            </div>
+          </div>
+</header>
+
+
+
+
+
+<footer>
+        <div class="contact-container">
+            <a href="mail:anda0004@stud.kea.dk" class="contact">
+                <img class="contact-icon" src="/Mail-logo.png" alt="Email">
+                <span class="tooltip">anda0004@stud.kea.dk</span>
+            </a>
+            <a href="tlf:+4542428259" class="contact">
+                <img class="contact-icon" src="/Telefon-logo.png" alt="Phone">
+                <span class="tooltip">+45 42 42 82 59</span>
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Forside</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Om Mig</a></li>
-            </ul>
-        </nav>
-    </header>
+</footer>
 
-    <main>
-        <section class="about-me">
-            <div class="profile-picture">
-                <img src="https://via.placeholder.com/300x300" alt="Profile Picture"> <!-- Replace with your actual image -->
-            </div>
-            <div class="other-images">
-                <div class="image">
-                    <img src="https://via.placeholder.com/300x300" alt="Other Image 1"> <!-- Replace with your actual image -->
-                </div>
-                <div class="image">
-                    <img src="https://via.placeholder.com/300x300" alt="Other Image 2"> <!-- Replace with your actual image -->
-                </div>
-            </div>
-            <div class="cv-section">
-                <h2>CV</h2>
-                <p>Link to your CV or download your CV</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contact">
-            <a href="mailto:anda0004@stud.kea.dk">anda0004@stud.kea.dk</a>
-            <a href="tel:+4542428259">+45 42 42 
+</body>
+</html>
